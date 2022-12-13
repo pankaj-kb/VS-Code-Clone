@@ -22,9 +22,9 @@
             /* font-size: 300; */
         }
 
-        .octaLine {
+        /* .octaLine {
             clip-path: polygon(74% 51%, 85% 68%, 100% 68%, 100% 100%, 0 100%, 0 68%, 61% 68%);
-        }
+        } */
 
         /* .downloadButton::before {
             content: "\f309""\3000";
@@ -37,7 +37,7 @@
 
     <!-- Navigation Section -->
 
-    <nav class="flex bg-zinc-800 text-zinc-100 h-[50px] fixed top-0 left-0 right-0">
+    <nav class="flex bg-zinc-800 text-zinc-100 h-[50px] fixed top-0 left-0 right-0 z-50">
         <div class="flex p-2 ml-[355px]">
             <img class="h-6 w-6 mt-[3px]" src="images/Mainlogo.png" alt="main-logo">
             <h1 class="mx-3 text-[20px] font-[400]">Visual Studio Code</h1>
@@ -61,7 +61,7 @@
     <!-- Main Section -->
 
     <main>
-        <div class="bg-zinc-900 h-[40px] mt-[50px]">
+        <div class="bg-zinc-900 h-[40px] relative mt-[50px]">
             <h2 class="text-center text-zinc-300 text-[17px] font-[400] pt-[5px]">This is "For Educational Purposes Only
                 (FEPO)"!!!.</h2>
         </div>
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="feeback-page flex bg-neutral-100 h-[400px] pt-[20px] relative justify-center">
+        <div class="feeback-page flex bg-neutral-100 h-[350px] pt-[20px] relative justify-center">
             <img class="h-[50px] mt-[120px] mr-[25px] hover:bg-slate-500 hover:cursor-pointer"
                 src="https://img.icons8.com/ios-filled/50/EBEBEB/chevron-left.png" alt="">
             <div class="flex mt-[80px]">
@@ -132,7 +132,7 @@
                 </div>
 
             </div>
-            <div class="flex mt-[80px]">
+            <div class="flex mt-[80px] ml-[25px]">
                 <img class="h-[80px] rounded-full" src="./images/profile-images/anuragsir.jpeg" alt="">
                 <div class="flex flex-col ml-[10px]">
                     <strong class="text-stone-800">Anurag Tiwari <p class="text-stone-600 text-[12px]"><i
@@ -142,7 +142,7 @@
                         VS-Code.</p>
                 </div>
             </div>
-            <div class="flex mt-[80px]">
+            <div class="flex mt-[80px] ml-[25px]">
                 <img class="h-[80px] rounded-full" src="./images/profile-images/me.jpeg" alt="pankaj-image">
                 <div class="flex flex-col ml-[10px]">
                     <strong class="text-stone-800">Pankaj Bhadane <p class="text-stone-600 text-[12px]"><i
@@ -157,11 +157,52 @@
         </div>
 
 
-        <div class="IntelliSense bg-white flex justify-center h-[400px] p-[80px]">
+        <div class="IntelliSense bg-white flex justify-center h-[350px] p-[80px]">
             <img class="h-[250px]" src="./images/home-intellisense.svg" alt="">
-            <div class="flex-col">
-                <h1>Meet IntelliSense.</h1>
-                <p class="w-[600px]">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions
+            <div class="flex-col ml-[100px]">
+                <h1 class="text-[30px] font-[200] mt-[-30px]">Meet IntelliSense.</h1>
+                <p class="w-[600px] text-[18px] font-[400] mt-[30px] leading-10">Go beyond syntax highlighting and
+                    autocomplete with IntelliSense, which provides smart completions
+                    based on variable types, function definitions, and imported modules.</p>
+            </div>
+        </div>
+
+        <div class="BugAndRun bg-neutral-100 bg-white flex flex-row-reverse justify-center h-[350px] pt-[80px]">
+            <img class="h-[250px] right-[400px] absolute" src="./images/home-debug.svg" alt="">
+            <div class="flex-col mr-[500px]">
+                <h1 class="text-[30px] font-[200] mt-[-30px]">Print statement debugging is a thing of the past.</h1>
+                <p class="w-[600px] text-[18px] font-[400] mt-[30px] leading-10">Debug code right from the editor.
+                    Launch or attach to your running apps and debug with break points, call stacks, and an interactive
+                    console.</p>
+            </div>
+        </div>
+
+        <div class="GitFeature bg-white flex justify-center h-[350px] p-[80px]">
+            <img class="h-[250px]" src="./images/home-git.svg" alt="">
+            <div class="flex-col ml-[100px]">
+                <h1 class="text-[30px] font-[200] mt-[-30px]">Git commands built-in.</h1>
+                <p class="w-[600px] text-[18px] font-[400] mt-[30px] leading-10">Working with Git and other SCM
+                    providers has never been easier. Review diffs, stage files, and make commits right from the editor.
+                    Push and pull from any hosted SCM service.</p>
+            </div>
+        </div>
+
+        <div class="BugAndRun bg-neutral-100 bg-white flex flex-row-reverse justify-center h-[350px] pt-[80px]">
+            <img class="h-[250px] right-[400px] absolute" src="./images/home-debug.svg" alt="">
+            <div class="flex-col mr-[500px]">
+                <h1 class="text-[30px] font-[200] mt-[-30px]">Print statement debugging is a thing of the past.</h1>
+                <p class="w-[600px] text-[18px] font-[400] mt-[30px] leading-10">Debug code right from the editor.
+                    Launch or attach to your running apps and debug with break points, call stacks, and an interactive
+                    console.</p>
+            </div>
+        </div>
+
+        <div class="IntelliSense bg-white flex justify-center h-[350px] p-[80px]">
+            <img class="h-[250px]" src="./images/home-intellisense.svg" alt="">
+            <div class="flex-col ml-[100px]">
+                <h1 class="text-[30px] font-[200] mt-[-30px]">Meet IntelliSense.</h1>
+                <p class="w-[600px] text-[18px] font-[400] mt-[30px] leading-10">Go beyond syntax highlighting and
+                    autocomplete with IntelliSense, which provides smart completions
                     based on variable types, function definitions, and imported modules.</p>
             </div>
         </div>
