@@ -22,6 +22,10 @@
             /* font-size: 300; */
         }
 
+        .octaLine {
+            clip-path: polygon(74% 51%, 85% 68%, 100% 68%, 100% 100%, 0 100%, 0 68%, 61% 68%);
+        }
+
         /* .downloadButton::before {
             content: "\f309""\3000";
             font-family: "FontAwesome";
@@ -33,11 +37,11 @@
 
     <!-- Navigation Section -->
 
-    <nav class="flex bg-zinc-800 text-zinc-100 h-[55px] fixed top-0 left-0 right-0">
+    <nav class="flex bg-zinc-800 text-zinc-100 h-[50px] fixed top-0 left-0 right-0">
         <div class="flex p-2 ml-[355px]">
             <img class="h-6 w-6 mt-[3px]" src="images/Mainlogo.png" alt="main-logo">
-            <h1 class="mx-3 text-[23px] font-[400]">Visual Studio Code</h1>
-            <ul class="NavSmall flex space-x-6 ml-[20px] mt-[8px] text-zinc-400 text-[18px] font-[400]">
+            <h1 class="mx-3 text-[20px] font-[400]">Visual Studio Code</h1>
+            <ul class="NavSmall flex space-x-6 ml-[20px] mt-[8px] text-zinc-400 text-[16px] font-[400]">
                 <li>Docs</li>
                 <li>Updates</li>
                 <li>Blog</li>
@@ -49,33 +53,50 @@
         </div>
         <div class="flex ml-[150px]">
             <input class="bg-zinc-700 placeholder:text-white placeholder:text-[15px]" placeholder="🔎   Search Docs" />
-            <button class="downloadButton bg-sky-700 pl-[15px] pr-[15px] text-lg text-center"> <i class="ri-download-line mr-[6px]"> </i> Download</button>
+            <button class="downloadButton bg-blue-900 pl-[15px] pr-[15px] text-lg text-center"> <i
+                    class="ri-download-line mr-[6px]"> </i> Download</button>
         </div>
     </nav>
 
     <!-- Main Section -->
 
     <main>
-        <div class="bg-zinc-900 h-[40px] mt-[55px]">
+        <div class="bg-zinc-900 h-[40px] mt-[50px]">
             <h2 class="text-center text-zinc-300 text-[17px] font-[400] pt-[5px]">This is "For Educational Purposes Only
                 (FEPO)"!!!.</h2>
         </div>
 
         <div class="mainFrame flex bg-zinc-800 text-white justify-center">
-            <div class="download-section">
-                <h1>Code editing.</h1>
-                <h1>Redefined.</h1>
-                <p>Free. Build on open source. Runs everywhere.</p>
-                <div>
-                    <button>Download for Windows <span>Stable Build</span></button>
-                    <button><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="download-section mt-[70px]">
+                <div class="flex flex-col align-center leading-[55px]">
+                    <h1 class="text-[50px] font-[200]">Code editing.</h1>
+                    <strong class="text-[50px] font-[400] ml-[22px]">Redefined.</strong>
                 </div>
-                <p>Web, Insiders edition, or other platforms</p>
-                <p>license and privacy statement.</p>
+                <p class="relative text-lg text-zinc-400 left-[-30px] top-2">Free. Build on open source. Runs
+                    everywhere.</p>
+                <div class="flex mt-[40px]">
+                    <button class="bg-blue-900 py-[10px] px-[20px]">
+                        <h1 class="text-[18px] font-[500]">Download for Windows</h1> 
+                        <p class="text-[14px] font-[100]">Stable Build</p>
+                    </button>
+                    <button class="bg-blue-900 ml-[2px] py-[10px] px-[15px]"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <p class="text-blue-800 mt-[15px]">Web, Insiders edition, <span class="text-zinc-400">or</span> other platforms</p>
+                <p class="text-zinc-400 ml-[30px] mt-[15px] text-[13px]">By using VS Code, you agree to its</p>
+                <p class="text-blue-800 text-[11px] ml-[50px]">license and privacy statement.</p>
             </div>
             <div>
-                <img class="h-[600px] mt-[30px] mb-[30px]" src="./images/home-screenshot-win-lg.png" alt="main-img">
+                <img class="h-[600px] mt-[30px] mb-[30px] ml-[30px]" src="./images/home-screenshot-win-lg.png"
+                    alt="main-img">
             </div>
+        </div>
+
+        <div class=" flex feature-section bg-white">
+            <i class="fa-regular fa-lightbulb"></i>
+            <i class="fa-solid fa-bug-slash"></i>
+            <i class="fa-solid fa-code-branch"></i>
+            <i class="fa-solid fa-cubes"></i>
+
         </div>
 
     </main>
