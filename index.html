@@ -276,84 +276,120 @@
                 Started Now</button>
         </div>
 
-        <div class="bg-white h-[] relative flex justify-center">
-            <div class="">
-                <img class="h-[100px]" src="./images/windows-logo.png" alt="">
-                <button class="bg-sky-700 text-white">
-                    <i class="ri-download-line"> </i>
-                    Windows <small>Windows 8, 10, 11</small></button>
-                <div class="grid grid-cols-4 gap-2 mt-[6px]">
-                    <h3>User Installer</h3>
-                    <button class="bg-sky-700 text-white">x64</button>
-                    <button class="bg-sky-700 text-white">x86</button>
-                    <button class="bg-sky-700 text-white">Arm64</button>
-                    <h3>System Installer</h3>
-                    <button class="bg-sky-700 text-white">x64</button>
-                    <button class="bg-sky-700 text-white">x86</button>
-                    <button class="bg-sky-700 text-white">Arm64</button>
-                    <h3>.zip</h3>
-                    <button class="bg-sky-700 text-white">x64</button>
-                    <button class="bg-sky-700 text-white">x86</button>
-                    <button class="bg-sky-700 text-white">Arm64</button>
-                    <h3>CLI</h3>
-                    <button class="bg-sky-700 text-white">x64</button>
-                    <button class="bg-sky-700 text-white">x86</button>
-                    <button class="bg-sky-700 text-white">Arm64</button>
-                </div>
-                <div>
-                    <img class="h-[100px]" src="./images/linux-logo.png" alt="">
-                    <div>
-                        <button class="bg-sky-700 text-white"><i class="ri-download-line"> </i>.deb <small>Debian, Ubuntu</small></button>
-                        <button class="bg-sky-700 text-white"><i class="ri-download-line"> </i>.rpm <small>Red Hat, Fedora, SUSE</small></button>
-                    </div>
-
-                    <div class="grid gap-4">
-                        <div class="grid grid-cols-4 gap-2 mt-[4px]">
-                            <h3>.deb</h3>
-                            <button class="bg-sky-700 text-white">x64</button>
-                            <button class="bg-sky-700 text-white">Arm32</button>
-                            <button class="bg-sky-700 text-white">Arm64</button>
-                            <h3>.rpm</h3>
-                            <button class="bg-sky-700 text-white">x64</button>
-                            <button class="bg-sky-700 text-white">Arm32</button>
-                            <button class="bg-sky-700 text-white">Arm64</button>
-                            <h3>.tar.gz</h3>
-                            <button class="bg-sky-700 text-white">x64</button>
-                            <button class="bg-sky-700 text-white">Arm32</button>
-                            <button class="bg-sky-700 text-white">Arm64</button>
-                            <h3>Snap</h3>
-                            <button class="bg-sky-700 text-white">Snap Store</button>
-                        </div>
-                        <div class="grid grid-cols-4">
-                            <h3>CLI</h3>
-                            <button class="bg-sky-700 text-white">x64</button>
-                            <button class="bg-sky-700 text-white">Arm32</button>
-                            <button class="bg-sky-700 text-white">Arm64</button>
-                        </div>
-
-                    </div>
-
-                    <div class="">
-                        <img class="h-[100px]" src="./images/apple-logo.svg" alt="">
-                        <button class="bg-sky-700 text-white"><i class="ri-download-line"> </i>Mac <small>macOS 10.11+</small></button>
-                        <div class="grid gap-4 mt-[4px]">
-                            <div class="grid grid-cols-4">
-                                <h3>.zip</h3>
-                                <button class="bg-sky-700 text-white">Intel chip</button>
-                                <button class="bg-sky-700 text-white">Apple silicon</button>
-                                <button class="bg-sky-700 text-white">Universal</button>
+        <div class="bg-white flex">
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th>
+                            <img class="h-[100px]" src="./images/windows-logo.png" alt="">
+                        </th>
+                        <th>
+                            <img class="h-[100px]" src="./images/linux-logo.png" alt="">
+                        </th>
+                        <th>
+                            <img class="h-[100px]" src="./images/apple-logo.svg" alt="">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="">
+                                <button class="bg-sky-700 text-white py-[8px] px-[25px]">
+                                    <h1 class="text-[18px] font-[600]">Windows</h1>
+                                    <small>Windows 8, 10, 11</small>
+                                </button>
+                                <div class="grid grid-cols-4 gap-2 mt-[6px]">
+                                    <h3>User Installer</h3>
+                                    <button class="bg-sky-700 text-white">x64</button>
+                                    <button class="bg-sky-700 text-white">x86</button>
+                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <h3>System Installer</h3>
+                                    <button class="bg-sky-700 text-white">x64</button>
+                                    <button class="bg-sky-700 text-white">x86</button>
+                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <h3>.zip</h3>
+                                    <button class="bg-sky-700 text-white">x64</button>
+                                    <button class="bg-sky-700 text-white">x86</button>
+                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <h3>CLI</h3>
+                                    <button class="bg-sky-700 text-white">x64</button>
+                                    <button class="bg-sky-700 text-white">x86</button>
+                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                </div>
                             </div>
-                            <div class="grid grid-cols-3">
-                                <h3>CLI</h3>
-                                <button class="bg-sky-700 text-white">Intel chip</button>
-                                <button class="bg-sky-700 text-white">Apple silicon</button>
+                        </td>
+                        <td>
+                            <div>
+                                <div>
+                                    <button class="bg-sky-700 text-white py-[8px] px-[20px]">
+                                        <h1 class="text-[18px] font-[600]">.deb</h1><small>Debian, Ubuntu</small>
+                                    </button>
+                                    <button class="bg-sky-700 text-white py-[8px] px-[20px]">
+                                        <h1 class="text-[18px] font-[600]">.rpm</h1><small>Red Hat, Fedora,
+                                            SUSE</small>
+                                    </button>
+                                </div>
+                
+                                <div class="grid gap-4">
+                                    <div class="grid grid-cols-4 gap-2 mt-[4px]">
+                                        <h3>.deb</h3>
+                                        <button class="bg-sky-700 text-white">x64</button>
+                                        <button class="bg-sky-700 text-white">Arm32</button>
+                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <h3>.rpm</h3>
+                                        <button class="bg-sky-700 text-white">x64</button>
+                                        <button class="bg-sky-700 text-white">Arm32</button>
+                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <h3>.tar.gz</h3>
+                                        <button class="bg-sky-700 text-white">x64</button>
+                                        <button class="bg-sky-700 text-white">Arm32</button>
+                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <h3>Snap</h3>
+                                        <button class="bg-sky-700 text-white">Snap Store</button>
+                                    </div>
+                                    <div class="grid grid-cols-4">
+                                        <h3>CLI</h3>
+                                        <button class="bg-sky-700 text-white">x64</button>
+                                        <button class="bg-sky-700 text-white">Arm32</button>
+                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                    </div>
+                
+                                </div>
                             </div>
+                        </td>
+                        <td>
+                            <div class="">
+                                <button class="bg-sky-700 text-white py-[8px] px-[25px]">
+                                    <h1 class="text-[18px] font-[600]">Mac</h1>
+                                    <small>macOs 10.11+</small>
+                                </button>
+                                <div class="grid gap-4 mt-[4px]">
+                                    <div class="grid grid-cols-4">
+                                        <h3>.zip</h3>
+                                        <button class="bg-sky-700 text-white">Intel chip</button>
+                                        <button class="bg-sky-700 text-white">Apple silicon</button>
+                                        <button class="bg-sky-700 text-white">Universal</button>
+                                    </div>
+                                    <div class="grid grid-cols-3">
+                                        <h3>CLI</h3>
+                                        <button class="bg-sky-700 text-white">Intel chip</button>
+                                        <button class="bg-sky-700 text-white">Apple silicon</button>
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                        </div>
+            
 
-                    </div>
+            
 
-                </div>
+        </div>
 
     </main>
 
