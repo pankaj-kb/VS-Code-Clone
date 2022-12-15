@@ -276,118 +276,144 @@
                 Started Now</button>
         </div>
 
-        <div class="bg-white flex">
-            <table class="mx-auto my-auto">
+        <div class="bg-white h-[450px] ">
+            <table class="mx-auto my-auto mt-[80px] border-separate border-spacing-x-12">
                 <thead>
                     <tr>
                         <th>
-                            <img class="h-[100px]" src="./images/windows-logo.png" alt="">
+                            <img class="h-[100px] ml-[170px]" src="./images/windows-logo.png" alt="">
                         </th>
                         <th>
-                            <img class="h-[100px]" src="./images/linux-logo.png" alt="">
+                            <img class="h-[100px] ml-[80px]" src="./images/linux-logo.png" alt="">
                         </th>
                         <th>
-                            <img class="h-[100px]" src="./images/apple-logo.svg" alt="">
+                            <img class="h-[100px] ml-[80px]" src="./images/apple-logo.svg" alt="">
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="text-center">
                         <td>
-                            <div class="">
+                            <div class="flex flex-col">
                                 <button class="bg-sky-700 text-white py-[8px] px-[25px]">
-                                    <h1 class="text-[18px] font-[600]">Windows</h1>
+                                    <h1 class="text-[18px] font-[600]"><i class="ri-download-line mr-[6px]"> </i>Windows
+                                    </h1>
                                     <small>Windows 8, 10, 11</small>
                                 </button>
-                                <div class="grid grid-cols-4 gap-2 mt-[6px]">
+                                <div class="grid grid-cols-4 gap-2 mt-[20px]">
                                     <h3>User Installer</h3>
-                                    <button class="bg-sky-700 text-white">x64</button>
-                                    <button class="bg-sky-700 text-white">x86</button>
-                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x86</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                     <h3>System Installer</h3>
-                                    <button class="bg-sky-700 text-white">x64</button>
-                                    <button class="bg-sky-700 text-white">x86</button>
-                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x86</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                     <h3>.zip</h3>
-                                    <button class="bg-sky-700 text-white">x64</button>
-                                    <button class="bg-sky-700 text-white">x86</button>
-                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x86</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                     <h3>CLI</h3>
-                                    <button class="bg-sky-700 text-white">x64</button>
-                                    <button class="bg-sky-700 text-white">x86</button>
-                                    <button class="bg-sky-700 text-white">Arm64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x86</button>
+                                    <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                 </div>
                             </div>
                         </td>
+
                         <td>
-                            <div>
-                                <div>
+                            <div class="flex flex-col">
+                                <div class="mt-[40px]">
                                     <button class="bg-sky-700 text-white py-[8px] px-[20px]">
-                                        <h1 class="text-[18px] font-[600]">.deb</h1><small>Debian, Ubuntu</small>
+                                        <h1 class="text-[18px] font-[600]"><i class="ri-download-line mr-[6px]"></i>.deb
+                                        </h1><small>Debian, Ubuntu</small>
                                     </button>
                                     <button class="bg-sky-700 text-white py-[8px] px-[20px]">
-                                        <h1 class="text-[18px] font-[600]">.rpm</h1><small>Red Hat, Fedora,
+                                        <h1 class="text-[18px] font-[600]"><i
+                                            class="ri-download-line mr-[6px]"></i>.rpm</h1><small>Red Hat, Fedora,
                                             SUSE</small>
                                     </button>
                                 </div>
-                
+
                                 <div class="grid gap-4">
-                                    <div class="grid grid-cols-4 gap-2 mt-[4px]">
+                                    <div class="grid grid-cols-4 gap-2 mt-[20px]">
                                         <h3>.deb</h3>
-                                        <button class="bg-sky-700 text-white">x64</button>
-                                        <button class="bg-sky-700 text-white">Arm32</button>
-                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm32</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                         <h3>.rpm</h3>
-                                        <button class="bg-sky-700 text-white">x64</button>
-                                        <button class="bg-sky-700 text-white">Arm32</button>
-                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-1">x64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm32</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                         <h3>.tar.gz</h3>
-                                        <button class="bg-sky-700 text-white">x64</button>
-                                        <button class="bg-sky-700 text-white">Arm32</button>
-                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm32</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                         <h3>Snap</h3>
-                                        <button class="bg-sky-700 text-white">Snap Store</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Snap
+                                            Store</button>
                                     </div>
-                                    <div class="grid grid-cols-4">
+                                    <div class="grid grid-cols-4 gap-2">
                                         <h3>CLI</h3>
-                                        <button class="bg-sky-700 text-white">x64</button>
-                                        <button class="bg-sky-700 text-white">Arm32</button>
-                                        <button class="bg-sky-700 text-white">Arm64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">x64</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm32</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Arm64</button>
                                     </div>
-                
+
                                 </div>
                             </div>
                         </td>
                         <td>
-                            <div class="">
-                                <button class="bg-sky-700 text-white py-[8px] px-[25px]">
-                                    <h1 class="text-[18px] font-[600]">Mac</h1>
+                            <div class="flex flex-col">
+                                <button class="bg-sky-700 text-white py-[8px] px-[25px] mt-[-56px]">
+                                    <h1 class="text-[18px] font-[600]"><i
+                                        class="ri-download-line mr-[6px]"></i>Mac</h1>
                                     <small>macOs 10.11+</small>
                                 </button>
-                                <div class="grid gap-4 mt-[4px]">
-                                    <div class="grid grid-cols-4">
+                                <div class="grid gap-4 mt-[20px]">
+                                    <div class="grid grid-cols-4 gap-2">
                                         <h3>.zip</h3>
-                                        <button class="bg-sky-700 text-white">Intel chip</button>
-                                        <button class="bg-sky-700 text-white">Apple silicon</button>
-                                        <button class="bg-sky-700 text-white">Universal</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Intel
+                                            chip</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Apple
+                                            silicon</button>
+                                        <button
+                                            class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Universal</button>
                                     </div>
-                                    <div class="grid grid-cols-3">
+                                    <div class="grid grid-cols-3 gap-2">
                                         <h3>CLI</h3>
-                                        <button class="bg-sky-700 text-white">Intel chip</button>
-                                        <button class="bg-sky-700 text-white">Apple silicon</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Intel
+                                            chip</button>
+                                        <button class="bg-sky-700 text-white text-[11px] font-[200] p-[1px]">Apple
+                                            silicon</button>
                                     </div>
-                
+
                                 </div>
-                
+
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            
 
-            
+
+
+
+        </div>
+
+        <div class="bg-neutral-100 h-[450px] "></div>
 
         </div>
 
